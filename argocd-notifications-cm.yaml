@@ -1,5 +1,7 @@
 apiVersion: v1
 data:
+  service.webex: |
+      token: $webex-token
   template.app-deployed: |
     email:
       subject: New version of an application {{.app.metadata.name}} is up and running.
